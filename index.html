@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    .page {
+        margin: 20px auto;
+        width: 620px;
+        border: 4px solid black;
+        display: inline-block;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #reniciar {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+    }
+</style>
+
+<body>
+    <div class="page">
+        <div>
+            <label for="palpite"> Digite seu palpite: </label>
+            <input type="text" id="palpite" />
+            <button type="submit" id="butao">Enviar palpite</button><br>
+            <button id="reniciar">Iniciar novo jogo</button><br>
+        </div>
+        <div class="resultados">
+            <p class="ultimonumero"></p>
+            <p class="palpites"></p>
+            <p class="baixoalto"></p>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
