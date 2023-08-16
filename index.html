@@ -14,7 +14,7 @@
     }
 
     .page {
-        margin: 20px auto;
+        margin: 0px auto;
         width: 620px;
         border: 4px solid black;
         display: inline-block;
@@ -26,13 +26,23 @@
         opacity: 0;
         transition: opacity 0.3s ease-in-out;
     }
+
+    #apagar {
+        margin: 1px auto;
+        float: right;
+        color: white;
+        background-color: rgb(255, 0, 0);
+    }
 </style>
 
 <body>
     <div class="page">
         <div>
+            <button id="apagar">Apagar Data</button><br>
+            <p>Vitórias: <strong id="win">0</strong> | Derrotas: <strong id="loss">0</strong></p>
+            <p>Tentativas: <strong id="tries">10</strong> | Erros: <strong id="miss">0</strong></p> 
             <label for="palpite"> Digite seu palpite: </label>
-            <input type="text" id="palpite" />
+            <input type="text" id="palpite"/>
             <button type="submit" id="butao">Enviar palpite</button><br>
             <button id="reniciar">Iniciar novo jogo</button><br>
         </div>
