@@ -79,4 +79,6 @@ function reiniciarJogo() {
     ultimonumero.style.backgroundColor = "white";
 
     numero = Math.floor(Math.random() * 100) + 1;
+
+    console.log(numero);
 }
